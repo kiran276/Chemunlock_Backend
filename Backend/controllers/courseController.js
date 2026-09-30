@@ -2,7 +2,7 @@ const Course = require('../models/Course');
 
 // @desc    Get all public courses (without pdfUrl)
 // @route   GET /api/courses
-// @access  Public
+// @access  Public //
 const getAllCourses = async (req, res, next) => {
   try {
     const courses = await Course.find()
